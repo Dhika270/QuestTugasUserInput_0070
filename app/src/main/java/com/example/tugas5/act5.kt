@@ -266,6 +266,10 @@ fun BiodataScreen() {
                                 checked = isUiUxChecked,
                                 onCheckedChange = { isUiUxChecked = it }
                             )
+                            Text(
+                                text = stringResource(id = R.string.skill_ui_ux),
+                                fontSize = 12.sp
+                            )
                         }
                     }
                 }
