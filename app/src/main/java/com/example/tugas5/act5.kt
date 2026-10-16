@@ -79,6 +79,21 @@ fun BiodataScreen() {
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight()
+                    .offset(y = (-25).dp),
+                shape = RoundedCornerShape(
+                    topStart = 36.dp,
+                    topEnd = 36.dp
+                ),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(id = R.color.card_background)
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+            ) {
+            }
         }
     }
 }
