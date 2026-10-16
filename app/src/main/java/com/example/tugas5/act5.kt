@@ -100,6 +100,12 @@ fun BiodataScreen() {
                         .padding(top = 32.dp, bottom = dimensionResource(id = R.dimen.screen_padding)),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
+                    Text(
+                        text = stringResource(id = R.string.form_title),
+                        fontSize = dimensionResource(id = R.dimen.text_size_title).value.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(id = R.color.purple_container_text)
+                    )
                 }
             }
         }
