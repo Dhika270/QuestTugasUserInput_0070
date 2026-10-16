@@ -277,6 +277,10 @@ fun BiodataScreen() {
                                 checked = isWebChecked,
                                 onCheckedChange = { isWebChecked = it }
                             )
+                            Text(
+                                text = stringResource(id = R.string.skill_web),
+                                fontSize = 12.sp
+                            )
                         }
                     }
                 }
