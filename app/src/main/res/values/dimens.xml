@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding & Margin -->
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="card_corner_radius">36dp</dimen>
+    <dimen name="header_height">260dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="corner_radius_input">12dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_subtitle">12sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+</resources>
