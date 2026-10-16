@@ -217,6 +217,11 @@ fun BiodataScreen() {
                                 shape = RoundedCornerShape(12.dp)
                             )
 
+                            ExposedDropdownMenu(
+                                expanded = expanded,
+                                onDismissRequest = { expanded = false }
+                            ) {
+                            }
                         }
                     }
                 }
