@@ -113,6 +113,22 @@ fun BiodataScreen() {
                         color = colorResource(id = R.color.text_subtitle),
                         modifier = Modifier.padding(top = 4.dp, bottom = 20.dp)
                     )
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        OutlinedTextField(
+                            value = firstName,
+                            onValueChange = { firstName = it },
+                            placeholder = {
+                                Text(stringResource(id = R.string.hint_first_name))
+                            },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(12.dp),
+                            singleLine = true
+                        )
+                    }
                 }
             }
         }
