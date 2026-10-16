@@ -44,3 +44,16 @@ fun BiodataScreen() {
         month,
         day
     )
+
+    var experience by remember { mutableStateOf("") }
+    var expanded by remember { mutableStateOf(false) }
+    val experienceOptions = listOf(
+        stringResource(id = R.string.exp_pemula),
+        stringResource(id = R.string.exp_menengah),
+        stringResource(id = R.string.exp_expert)
+    )
+
+    var isAndroidChecked by remember { mutableStateOf(false) }
+    var isUiUxChecked by remember { mutableStateOf(false) }
+    var isWebChecked by remember { mutableStateOf(false) }
+    var showDialog by remember { mutableStateOf(false) }
