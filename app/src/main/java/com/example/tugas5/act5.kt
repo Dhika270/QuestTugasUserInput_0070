@@ -305,6 +305,15 @@ fun BiodataScreen() {
                     }
                 }
             }
+
+            if (showDialog) {
+                val selectedSkills = buildList {
+                    if (isAndroidChecked) add(stringResource(id = R.string.skill_android))
+                    if (isUiUxChecked) add(stringResource(id = R.string.skill_ui_ux))
+                    if (isWebChecked) add(stringResource(id = R.string.skill_web))
+                }
+                val skillsText = selectedSkills.joinToString(", ").ifBlank { "-" }
+            }
         }
     }
 }
