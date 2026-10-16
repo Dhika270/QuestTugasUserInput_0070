@@ -93,6 +93,14 @@ fun BiodataScreen() {
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
             ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(horizontal = dimensionResource(id = R.dimen.screen_padding))
+                        .padding(top = 32.dp, bottom = dimensionResource(id = R.dimen.screen_padding)),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                }
             }
         }
     }
