@@ -283,6 +283,21 @@ fun BiodataScreen() {
                             )
                         }
                     }
+
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    Button(
+                        onClick = { showDialog = true },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(dimensionResource(id = R.dimen.button_height)),
+                        shape = RoundedCornerShape(12.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id = R.color.purple_primary),
+                            contentColor = colorResource(id = R.color.white)
+                        )
+                    ) {
+                    }
                 }
             }
         }
