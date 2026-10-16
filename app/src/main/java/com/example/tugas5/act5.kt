@@ -233,6 +233,18 @@ fun BiodataScreen() {
                             }
                         }
                     }
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    Text(
+                        text = stringResource(id = R.string.label_skills),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = dimensionResource(id = R.dimen.text_size_body).value.sp,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(bottom = 8.dp)
+                    )
+
                 }
             }
         }
