@@ -128,6 +128,17 @@ fun BiodataScreen() {
                             shape = RoundedCornerShape(12.dp),
                             singleLine = true
                         )
+
+                        OutlinedTextField(
+                            value = lastName,
+                            onValueChange = { lastName = it },
+                            placeholder = {
+                                Text(stringResource(id = R.string.hint_last_name))
+                            },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(12.dp),
+                            singleLine = true
+                        )
                     }
                 }
             }
