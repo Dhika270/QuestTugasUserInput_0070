@@ -195,6 +195,14 @@ fun BiodataScreen() {
                                     .clickable { datePickerDialog.show() }
                             )
                         }
+
+                        ExposedDropdownMenuBox(
+                            expanded = expanded,
+                            onExpandedChange = { expanded = !expanded },
+                            modifier = Modifier.weight(1f)
+                        ) {
+
+                        }
                     }
                 }
             }
