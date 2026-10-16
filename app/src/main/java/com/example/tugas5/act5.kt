@@ -160,6 +160,17 @@ fun BiodataScreen() {
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
                     ) {
+                        Box(modifier = Modifier.weight(1f)) {
+                            OutlinedTextField(
+                                value = birthDate,
+                                onValueChange = {},
+                                readOnly = true,
+                                placeholder = {
+                                    Text(stringResource(id = R.string.hint_birth_date))
+                                },
+
+                            )
+                        }
                     }
                 }
             }
