@@ -245,6 +245,12 @@ fun BiodataScreen() {
                             .padding(bottom = 8.dp)
                     )
 
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                    }
                 }
             }
         }
