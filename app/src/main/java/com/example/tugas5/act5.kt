@@ -250,6 +250,16 @@ fun BiodataScreen() {
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = isAndroidChecked,
+                                onCheckedChange = { isAndroidChecked = it }
+                            )
+                            Text(
+                                text = stringResource(id = R.string.skill_android),
+                                fontSize = 12.sp
+                            )
+                        }
                     }
                 }
             }
