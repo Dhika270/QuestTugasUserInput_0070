@@ -260,6 +260,13 @@ fun BiodataScreen() {
                                 fontSize = 12.sp
                             )
                         }
+
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = isUiUxChecked,
+                                onCheckedChange = { isUiUxChecked = it }
+                            )
+                        }
                     }
                 }
             }
