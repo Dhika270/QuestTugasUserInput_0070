@@ -189,6 +189,11 @@ fun BiodataScreen() {
                                 shape = RoundedCornerShape(12.dp),
                                 singleLine = true
                             )
+                            Box(
+                                modifier = Modifier
+                                    .matchParentSize()
+                                    .clickable { datePickerDialog.show() }
+                            )
                         }
                     }
                 }
