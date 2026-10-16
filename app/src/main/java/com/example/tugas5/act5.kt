@@ -319,8 +319,27 @@ fun BiodataScreen() {
                     shape = RoundedCornerShape(24.dp),
                     containerColor = colorResource(id = R.color.card_background),
                     title = {
+                        Text(
+                            text = stringResource(id = R.string.dialog_title),
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 18.sp
+                        )
+                    },
+                    text = {
+                        Column(modifier = Modifier.fillMaxWidth()) {
+                            Text(text = "Nama: $firstName $lastName", fontSize = 14.sp)
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(text = "Email: $email", fontSize = 14.sp)
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(text = "Tanggal lahir: $birthDate", fontSize = 14.sp)
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(text = "Experience: $experience", fontSize = 14.sp)
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(text = "Skill: $skillsText", fontSize = 14.sp)
+                        }
                     },
 
+                    }
                 )
             }
         }
