@@ -168,6 +168,14 @@ fun BiodataScreen() {
                                 placeholder = {
                                     Text(stringResource(id = R.string.hint_birth_date))
                                 },
+                                trailingIcon = {
+                                    Icon(
+                                        painter = painterResource(
+                                            id = android.R.drawable.ic_menu_my_calendar
+                                        ),
+                                        contentDescription = "Kalender"
+                                    )
+                                },
 
                             )
                         }
