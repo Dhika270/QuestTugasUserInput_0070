@@ -313,6 +313,15 @@ fun BiodataScreen() {
                     if (isWebChecked) add(stringResource(id = R.string.skill_web))
                 }
                 val skillsText = selectedSkills.joinToString(", ").ifBlank { "-" }
+
+                AlertDialog(
+                    onDismissRequest = { showDialog = false },
+                    shape = RoundedCornerShape(24.dp),
+                    containerColor = colorResource(id = R.color.card_background),
+                    title = {
+                    },
+
+                )
             }
         }
     }
