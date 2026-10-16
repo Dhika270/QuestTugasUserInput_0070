@@ -338,7 +338,16 @@ fun BiodataScreen() {
                             Text(text = "Skill: $skillsText", fontSize = 14.sp)
                         }
                     },
-
+                    confirmButton = {
+                        Button(
+                            onClick = { showDialog = false },
+                            shape = RoundedCornerShape(12.dp),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = colorResource(id = R.color.purple_primary)
+                            )
+                        ) {
+                            Text(text = stringResource(id = R.string.dialog_btn_close))
+                        }
                     }
                 )
             }
